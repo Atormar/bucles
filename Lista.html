@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pokemons1 = [];
+        pokemons1.push("Pikachu");
+        pokemons1.push("Bulbasaur");
+        pokemons1.push("Charmander");
+        pokemons1.push("Squirtle");
+        pokemons1.push("Chikorita");
+        pokemons1.push("Cyndaquil");
+        pokemons1.push("Totodile");
+        pokemons1.push("Treeko");
+        pokemons1.push("Torchic");
+        pokemons1.push("Mudkip");
+
+        var pokemons2 = [];
+        pokemons2.push("Gengar")
+        pokemons2.push("Jigglypuff")
+        pokemons2.push("Snorlax")
+
+        pokemons1.forEach(function(pokemon){
+            console.log(pokemons1);
+        })
+
+        console.log("POP()");
+        console.log(pokemons1.pop());
+        pokemons1.forEach(function(pokemon){
+            console.log(pokemons1);
+        })
+
+        console.log("SHIFT");
+        console.log(pokemons1.shift());
+        console.log("UNSHIFT")
+        console.log(pokemons1.unshift("Pikachu"))
+        console.log("SPLICE");
+        console.log(pokemons1.splice(1, 0,"Turtwig"));
+        console.log("JOIN");
+        console.log(pokemons1.join(","));
+        console.log("REVERSE");
+        console.log(pokemons1.reverse());
+        console.log("CONCAT");
+        console.log(pokemons1.concat(pokemons2));
+        console.log(pokemons1.slice(1, 4));
+    </script>
+</body>
+</html>
